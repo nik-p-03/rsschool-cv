@@ -1,3 +1,8 @@
+body {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
   min-width: 100vw;
   overflow: hidden;
@@ -10,6 +15,28 @@
   padding: 15px;
 }
 
+.container>div {
+  background-color: #e8760c;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 6vw;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+code {
+  font-size: 1vw;
+}
+
 /* --------------------------------- */
 
 .header {
@@ -17,10 +44,7 @@
 }
 
 .header__inner {
-  background-color: #e8760c;
-  border-radius: 15px;
   display: flex;
-  max-height: 30vw;
 }
 
 .header__profile-img-box {
@@ -41,14 +65,7 @@
   margin-bottom: 30px;
 }
 
-.header__name p {
-  font-size: 6vw;
-  margin-left: 40px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header__nav-item{
+.header__nav-item {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -67,4 +84,26 @@
 
 .header__nav-item a {
   transition: color .5s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* --------------------------------- */
+
+main>.container>div {
+  margin-bottom: 15px;
+  padding: 30px;
+}
+
+main li {
+  list-style-type: square;
+  margin-left: 16px;
+  transition: color .3s;
+}
+
+main a {
+  transition: color .3s;
+}
+
+main a:hover {
+  color: #00ffff;
 }
