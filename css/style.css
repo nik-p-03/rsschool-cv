@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -15,7 +20,7 @@ body {
   padding: 15px;
 }
 
-.container>div {
+.container>div, .container>section {
   background-color: #e8760c;
   border-radius: 15px;
 }
@@ -89,7 +94,7 @@ code {
 
 /* --------------------------------- */
 
-main>.container>div {
+main>.container>section {
   margin-bottom: 15px;
   padding: 30px;
 }
@@ -106,4 +111,47 @@ main a {
 
 main a:hover {
   color: #00ffff;
+}
+
+section:target {
+  box-shadow: 0px 0px 15px 6px #09ff01a8;
+}
+
+section {
+  transition: box-shadow 2s;
+}
+
+/* --------------------------------- */
+
+footer .container div {
+  background-color: #5c4026;
+}
+
+footer .container {
+  padding-bottom: 0px;
+}
+
+.footer__info {
+  max-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.footer__info a {
+  transition: color .3s;
+  transition: rotate .7s;
+}
+
+.footer__info a:hover {
+  color: #11a10c;
+  rotate: 10deg;
+}
+
+.footer__info img {
+  width: 10vw;
+  height: 10vw;
 }
